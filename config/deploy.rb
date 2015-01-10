@@ -10,7 +10,7 @@ set :keep_releases,     5
 set :user,    'deploy'
 set :group,   'deploy'
 
-set :deploy_to, '/home/deploy/sites/rails-bestpractices.xinminlabs.com/production'
+set :deploy_to, '/home/deploy/sites/rails-bestpractices.com/production'
 
 namespace :deploy do
   task :update_jekyll do
