@@ -8,6 +8,9 @@
   float: left;
   width: 50%;
 }
+.post table th, .post table td {
+  padding: 5px;
+}
 #tag-cloud .set-2 {
   font-size: 1.2em;
 }
