@@ -1,0 +1,8 @@
+paginate: 10
+highlighter: pygments
+markdown: rdiscount
+permalink: /posts/:year/:month/:day/:title/
+
+tag_page_layout: tag_page
+tag_page_dir: tag
+tag_permalink_style: pretty

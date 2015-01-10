@@ -1,0 +1,43 @@
+---
+layout: default
+title: Richard Huang's Blog
+---
+{% for post in paginator.posts %}
+  <div class="post">
+    <h2>
+      <a class="title" href="{{ post.url }}" title="{{ post.title }}" rel="bookmark">{{ post.title }}</a>
+    </h2>
+    <p class="published muted">{{ post.date | date_to_string }}</p>
+    <p class="author muted">{{ post.author }}</p>
+    <div class="decription">
+      {{ post.description }}
+      <a href="{{ post.url }}" class="btn pull-right">Read More</a>
+    </div>
+    <p class="muted">
+      Tags&nbsp;
+      {% for tag in post.tags %}
+      <a href="/tag/{{ tag }}" title="{{ tag }}" rel="tag" class="btn btn-mini">{{ tag }}</a>
+      {% endfor %}
+    </p>
+  </div>
+  <hr/>
+{% endfor %}
+
+<div class="pager">
+  <ul>
+    {% if paginator.previous_page %}
+      <li class="previous">
+        {% if paginator.previous_page == 1 %}
+        <a href="/blog.html" title="Previous Page">&laquo; Previous</a>
+        {% else %}
+        <a href="/page{{ paginator.previous_page }}/" title="Previous Page">&laquo; Previous</a>
+        {% endif %}
+      </li>
+    {% endif %}
+    <li class="next">
+      {% if paginator.next_page %}
+      <a href="/page{{ paginator.next_page }}/" title="Next Page">Next &raquo;</a>
+      {% endif %}
+    </li>
+  </ul>
+</div>

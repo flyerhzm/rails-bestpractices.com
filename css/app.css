@@ -1,0 +1,44 @@
+.post .published {
+  float: right;
+}
+.post .votes {
+  overflow: hidden;
+}
+.post .votes .likes, .post .votes .dislikes {
+  float: left;
+  width: 50%;
+}
+#tag-cloud .set-2 {
+  font-size: 1.2em;
+}
+#tag-cloud .set-3 {
+  font-size: 1.5em;
+}
+#tag-cloud .set-4 {
+  font-size: 1.7em;
+}
+#tag-cloud .set-5 {
+  font-size: 2em;
+}
+.sidebar {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.sidebar .widget {
+  margin-bottom: 20px;
+}
+.sidebar .widget .title {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 40px;
+}
+.sidebar .widget li {
+  margin-right: 10px;
+}
+.footer {
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 70px;
+  border-top: 1px solid #e5e5e5;
+  background-color: #f5f5f5;
+}

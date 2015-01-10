@@ -1,0 +1,48 @@
+---
+layout: default
+---
+<div class="post">
+  <h1><a class="title" href="{{ page.url }}" title="{{ page.title }}" rel="bookmark">{{ page.title }}</a></h1>
+  <p class="published muted">{{ page.date | date_to_string }}</p>
+  <p class="author muted">{{ page.author }}</p>
+  <div class="content">{{ content }}</div>
+  <p class="muted">
+    Tags&nbsp;
+    {% for tag in page.tags %}
+    <a href="/tag/{{ tag }}" title="{{ tag }}" rel="tag" class="btn btn-mini">{{ tag }}</a>
+    {% endfor %}
+  </p>
+  <div class="votes">
+    <div class="likes">
+      <h3>Likes</h3>
+      <ul>
+        {% for user in page.likes %}
+          <li>{{ user }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="dislikes">
+      <h3>Dislikes</h3>
+      <ul>
+        {% for user in page.dislikes %}
+          <li>{{ user }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+<hr/>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'railsbestpractices'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

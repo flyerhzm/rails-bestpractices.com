@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<h1 class="page-title">{{page.tag}}</h1>
+<ol class="archive">
+{% for post in page.posts %}
+  <div class="post">
+    <h2>
+      <a class="title" href="{{ post.url }}" title="{{ post.title }}" rel="bookmark">{{ post.title }}</a>
+    </h2>
+    <p class="published muted">{{ post.date | date_to_string }}</p>
+    <p class="author muted">{{ post.author }}</p>
+    <div class="description">
+      {{ post.description }}
+      <a href="{{ post.url }}" class="btn pull-right">Read More</a>
+    </div>
+    <p class="muted">
+      Tags&nbsp;
+      {% for tag in post.tags %}
+      <a href="/tag/{{ tag }}" title="{{ tag }}" rel="tag" class="btn btn-mini">{{ tag }}</a>
+      {% endfor %}
+    </p>
+  </div>
+  <hr/>
+{% endfor %}
+</ol>
