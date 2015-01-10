@@ -1,6 +1,14 @@
 # rails-bestpractices.com
 
-## Usage
+## Develop
 
     bundle install
     bundle exec ejekyll serve --watch
+
+## Contributing
+
+All contributions are welcome: ideas, patches, documentation, bug
+reports, complaints, and even something you drew up on a napkin.
+
+If you have any idea to write better rails code, please fork and send
+pull request to us.
