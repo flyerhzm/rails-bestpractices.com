@@ -5,7 +5,6 @@ author: Richard Huang (flyerhzm@gmail.com)
 description: The "save" method on ActiveRecord returns "false" and does nothing if the record is invalid. You should always check the return value, otherwise you may inadvertently not save the record. If you think the record can never be invalid, or don't want to check the return value, use "save!"
 tags:
 - active_record
-- save
 likes:
 - danpolites (dpolites@gmail.com)
 - milushov (rails-bestpractices@milushov.ru7)
@@ -45,7 +44,7 @@ Now you will get an error if the `post` cannot be saved, which will alert you to
 The [record.update_attributes][3] method will also return "false" if it failed to save changes. Just as for `save`, you should check the return value or use [update_attributes!][4].
 
 The [RecordClass.create][5] method may fail to save the newly created method, but will not return `false` in that case. It should be avoided for this reason, and you should always use [RecordClass.create!][6].
-    
+
 
 
   [1]: http://api.rubyonrails.org/classes/ActiveRecord/Persistence.html#method-i-save

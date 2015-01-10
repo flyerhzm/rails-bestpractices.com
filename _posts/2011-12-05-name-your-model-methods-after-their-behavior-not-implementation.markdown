@@ -4,12 +4,12 @@ title: Name your model methods after their behavior, not implementation.
 author: Brasten Sager (brasten@brasten.me)
 description: Business model methods should be named after the logic / business value they provide, not the implementation details. Violations to this practice tend to show up on ActiveRecord models.
 tags:
-- models
+- model
 likes:
 - juancolacelli (juancolacelli@gmail.com)
 - alauper (adamlauper@gmail.com)
 dislikes:
-- 
+-
 ---
  Before
 ------
@@ -24,7 +24,7 @@ Here’s an example from a project I’m working on now:
 
 
     class Device
-    
+
       class << self
         # provisions a new device for the user
         #
@@ -44,7 +44,7 @@ Persistence is something your business model does for you, when necessary. How i
 Instead, name your method based on the business function it performs:
 
     class Device
-    
+
       class << self
         # provisions a new device for the user
         #

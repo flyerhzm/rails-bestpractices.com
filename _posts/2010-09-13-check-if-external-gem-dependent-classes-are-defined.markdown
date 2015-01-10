@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Check if external gem-dependent classes are defined 
+title: Check if external gem-dependent classes are defined
 author: Bartosz Pietrzak (bartosz@monterail.com)
 description: If you have to set some external gem's config options in /config/enviroment.rb, contain it within `if defined?` block
 tags:
 - rails2
 - config
-- gems
 - gem
-- initializers
+- initializer
 likes:
 - bartosz (bartosz@monterail.com)
 - juancolacelli (juancolacelli@gmail.com)

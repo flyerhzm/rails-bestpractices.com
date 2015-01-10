@@ -4,7 +4,6 @@ title: Double-check your migrations
 author: Jaime Iniesta (jaimeiniesta@gmail.com)
 description: When you generate a new migration, try it forwards and backwards to ensure it has no errors
 tags:
-- sanity checks
 - migration
 likes:
 - eric (eric@pixelwareinc.com)
@@ -46,7 +45,7 @@ likes:
 - freemanoid321 (freemanoid321@gmail.com)
 - ahmad.alkheat.5 (wisamfaithful@gmail.com)
 dislikes:
-- 
+-
 ---
 Many developers only check their migrations work on the forward step (rake db:migrate) but not so often on the backwards step (rake db:rollback).
 
