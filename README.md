@@ -1,8 +1,6 @@
-blog.huangzhimin.com
-====================
+# rails-bestpractices.com
 
-Usage
------
+## Usage
 
     bundle install
     bundle exec ejekyll serve --watch
