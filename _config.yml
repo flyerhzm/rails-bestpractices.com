@@ -6,3 +6,7 @@ permalink: /posts/:year/:month/:day/:title/
 tag_page_layout: tag_page
 tag_page_dir: tag
 tag_permalink_style: pretty
+
+name: Rails Best Practices
+description: Best development pratices to write ruby on rails apps
+url: http://rails-bestpractices.com/
