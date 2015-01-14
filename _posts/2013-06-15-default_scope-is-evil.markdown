@@ -2,7 +2,7 @@
 layout: post
 title: default_scope is evil
 author: Richard Huang (flyerhzm@gmail.com)
-description: activerecord provides default_scope to set a default scope for all operations on the model, it looks convenient at first, but will lead to some unexpected behaviors, we should avoid using it. 
+description: ActiveRecord provides default_scope to set a default scope for all operations on the model, it looks convenient at first, but will lead to some unexpected behaviors, we should avoid using it. 
 tags:
 - model
 likes:
