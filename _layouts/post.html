@@ -12,24 +12,6 @@ layout: default
     <a href="/tag/{{ tag }}" title="{{ tag }}" rel="tag" class="btn btn-mini">{{ tag }}</a>
     {% endfor %}
   </p>
-  <div class="votes">
-    <div class="likes">
-      <h3>Likes</h3>
-      <ul>
-        {% for user in page.likes %}
-          <li>{{ user }}</li>
-        {% endfor %}
-      </ul>
-    </div>
-    <div class="dislikes">
-      <h3>Dislikes</h3>
-      <ul>
-        {% for user in page.dislikes %}
-          <li>{{ user }}</li>
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
 </div>
 <hr/>
 
