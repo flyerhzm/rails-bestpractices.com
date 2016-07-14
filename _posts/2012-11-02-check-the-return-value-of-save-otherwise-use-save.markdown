@@ -29,7 +29,7 @@ This code may work at the moment, but it is fragile. If a later refactoring intr
 
 ## Refactor
 
-If you you think the record can never be invalid, or don't want to check the return value, use "[save!][2]"
+If you think the record can never be invalid, or don't want to check the return value, use "[save!][2]"
 
     post = Posts.new do |p|
       p.title = "example"
