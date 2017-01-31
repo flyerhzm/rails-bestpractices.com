@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create base conroller 
+title: Create base controller 
 author: Guo Lei (guolei9@gmail.com)
 description: Have base controllers for DRY
 tags:
@@ -17,6 +17,7 @@ dislikes:
 - juancolacelli (juancolacelli@gmail.com)
 - DanBlack (klobor@yandex.ru)
 ---
+
 To keep codes clear, we usually put controllers with same business scope into the same directory. In most cases, these controllers will share some functions, so we can create a base controller for them for DRY. 
 
 For example, we have a list of controllers for content management:
