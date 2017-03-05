@@ -1,5 +1,5 @@
 set :rvm_type, :user
-set :rvm_ruby_version, '2.2.0'
+set :rvm_ruby_version, '2.3.3'
 
 set :application,       'rails-bestpractices.com'
 set :scm,               :git
