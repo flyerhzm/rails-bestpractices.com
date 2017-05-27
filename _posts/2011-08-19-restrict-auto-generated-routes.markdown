@@ -1,30 +1,12 @@
 ---
 layout: post
 title: Restrict auto-generated routes.
-author: Andy Wang (wangyaodi@gmail.com)
+author: Andy Wang
 description: By default, Rails generates seven RESTful routes(new,edit,create,destroy,index,show, update) for a resource, sometime the resource only needs one or two routes, so just user :only or :except while defining routes to speedup the routing.
 tags:
 - route
 - rails
 - RESTful
-likes:
-- flyerhzm (flyerhzm@gmail.com)
-- emmanuel delgado ()
-- juancolacelli (juancolacelli@gmail.com)
-- yorzi (wangyaodi@gmail.com)
-- marshluca (marshluca@gmail.com)
-- David Westerink (davidakachaos@gmail.com)
-- tomthorgal (thomas.vollath@gmail.com)
-- Reza (reza.naq@gmail.com)
-- karthik_ak (mindaslab@gmail.com)
-- martinciu (marcin.ciunelis@gmail.com)
-- rizidoro (izidoro.rafa@gmail.com)
-- aki.shinde (akshayshinde7@gmail.com)
-- taylor.ralston (taylor.ralston@gmail.com)
-- bugmenot (fhugfizn@sharklasers.com)
-- beata (nahoyabe@gmail.com)
-dislikes:
-- sunteya (sunteya@gmail.com)
 ---
 For instance, you've got a comments_controller, and your application only needs its "create" and "destroy" actions. How will you define your routes?
 

@@ -1,31 +1,11 @@
 ---
 layout: post
 title: Use asset_host for production server
-author: Richard Huang (flyerhzm@gmail.com)
+author: Richard Huang
 description: Use asset host for cookie-free domains for components, that make your components load faster.
 tags:
 - performance
 - assets
-likes:
-- flyerhzm (flyerhzm@gmail.com)
-- mdorfin (dorofienko@gmail.com)
-- eric (eric@pixelwareinc.com)
-- questioner (questioner@gmail.com)
-- Codeblogger (codeblogger@gmail.com)
-- madeofcode (markdodwell@gmail.com)
-- yorzi (wangyaodi@gmail.com)
-- Nikos D. ()
-- kylemathews (kylemathews@gmail.com)
-- des (Ijon57@gmail.com)
-- matthewcford (matt@bitzesty.com)
-- Locke23rus (locke23rus@gmail.com)
-- juancolacelli (juancolacelli@gmail.com)
-- 29decibel (mike.d.1984@gmail.com)
-- lisovskyvlad (lisovskyvlad@gmail.com)
-- valner.medeiros (valner.medeiros@gmail.com)
-- PsiCat (ogealter@gmail.com)
-dislikes:
-- 
 ---
 If you set your application and assets (image, stylesheet and javascript) on the same domain, the browser and server will pass cookies for each asset request, which is not necessary and waste your bandwidth.
 

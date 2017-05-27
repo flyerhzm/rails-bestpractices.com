@@ -1,23 +1,11 @@
 ---
 layout: post
 title: Protect mass assignment
-author: Richard Huang (flyerhzm@gmail.com)
+author: Richard Huang
 description: Rails mass assignment feature is really useful, but it may be a security issue, it allows an attacker to set any models' attributes you may not expect. To avoid this, we should add attr_accessbile or attr_protected to all models.
 tags:
 - model
 - security
-likes:
-- flyerhzm (flyerhzm@gmail.com)
-- brian.maltzan (brian.maltzan@gmail.com)
-- beornborn (beornborn@gmail.com)
-- ketzusaka (ketzu@me.com)
-- mmarqueti (marcelomarqueti@gmail.com)
-- luckykrrish (luckykrrish@gmail.com)
-- arunkarthick (arunkarthick.it@gmail.com)
-- Mike (mike@odania-it.de)
-dislikes:
-- Carlos Brando (eduardobrando@gmail.com)
-- alauper (adamlauper@gmail.com)
 ---
 Last weekend github is hacked because of mass assignment issue, actually it's not rails fault, it's a "junior" develop forgot to add attr_accessible or attr_protected to model, like
 

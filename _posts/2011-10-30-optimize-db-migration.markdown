@@ -1,18 +1,11 @@
 ---
 layout: post
 title: Optimize db migration
-author: Richard Huang (flyerhzm@gmail.com)
+author: Richard Huang
 description: rails migration provides a convenient way to alter database structure, you can easily add, change and drop column to a existing table, but when the data in existing table are huge, it will take a long time to alter existing table, you should try to merge/optimize the db alter sql statements.
 tags:
 - migration
 - performance
-likes:
-- flyerhzm (flyerhzm@gmail.com)
-- juancolacelli (juancolacelli@gmail.com)
-- Dmitry Nesteruk ()
-- PsiCat (ogealter@gmail.com)
-dislikes:
-- alauper (adamlauper@gmail.com)
 ---
 Nowadays it's easy to reach millions users for a startup website due to sns success, that means the tables on production server are huge, if you want to alter table structure, like add a new column, it may takes tens of minutes or several hours to execute.
 

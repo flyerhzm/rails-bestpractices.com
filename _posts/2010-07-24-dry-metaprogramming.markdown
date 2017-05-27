@@ -1,19 +1,10 @@
 ---
 layout: post
 title: DRY Metaprogramming
-author: Wen-Tien Chang (ihower@gmail.com)
+author: Wen-Tien Chang
 description: If you find some methods whose definitions are similar, only different by the method name, it may use meta programming to simplify the things.
 tags:
 - model
-likes:
-- ihower (ihower@gmail.com)
-- slavix (admin@slavix.com)
-- AndrÃ© Moreira ã‚ªã‚¿ã‚¯ ()
-- juancolacelli (juancolacelli@gmail.com)
-- anga (andres.b.dev@gmail.com)
-- jain.mohit27 (jain.mohit27@gmail.com)
-dislikes:
--
 ---
 Bad Smell
 ---------

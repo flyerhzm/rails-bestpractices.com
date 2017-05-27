@@ -1,21 +1,11 @@
 ---
 layout: post
 title: split your cap tasks into different files
-author: Richard Huang (flyerhzm@gmail.com)
+author: Richard Huang
 description: Your capistrano deploy.rb file might become complicated with the growth of your application, contain more and more cap tasks, it would be better to split these tasks into different files according to the functionalities, which makes it easy to maintain, and they are more likely to be reused in the future.
 tags:
 - deployment
 - capistrano
-likes:
-- flyerhzm (flyerhzm@gmail.com)
-- chrishein (me@christopherhein.com)
-- marocchino (marocchino@gmail.com)
-- rgo (contacto@rafagarcia.net)
-- ck3g (kalastiuz@gmail.com)
-- Mike (mike@odania-it.de)
-- xanbei (xanbei@gmail.com)
-dislikes:
-- 
 ---
 I worked on a large project, it contains a lot of capistrano tasks, which makes it more and more difficult to maintain.
 
@@ -36,7 +26,7 @@ After application grows, I saw too much tasks written in config/deploy.rb file, 
     after "deploy", "cron:update"
     after "deploy", "sitemap:refresh"
     set :assets_dependencies, %w(app/assets lib/assets vendor/assets Gemfile.lock config/routes.rb)
-    
+
     namespace :cron do
       task :update do
         update_app
@@ -65,8 +55,8 @@ After application grows, I saw too much tasks written in config/deploy.rb file, 
     end
 
     namespace :deploy do
-      task :start do ; end 
-      task :stop do ; end 
+      task :start do ; end
+      task :stop do ; end
       task :restart, :roles => :app, :except => { :no_release => true } do
         # restart app servers
       end
@@ -117,7 +107,7 @@ We have 3 capistrano recipes, asset_pipeline, cron and sitemap, each with one fu
     # config/deploy.rb
     require 'capistrano_colors'
     require 'bundler/capistrano'
-    
+
     set :user, 'huangzhi'
     ......
     role :web, "app.example.com"
@@ -129,8 +119,8 @@ We have 3 capistrano recipes, asset_pipeline, cron and sitemap, each with one fu
     load 'config/deploy/recipes/sitemap'
 
     namespace :deploy do
-      task :start do ; end 
-      task :stop do ; end 
+      task :start do ; end
+      task :stop do ; end
       task :restart, :roles => :app, :except => { :no_release => true } do
         # restart app servers
       end

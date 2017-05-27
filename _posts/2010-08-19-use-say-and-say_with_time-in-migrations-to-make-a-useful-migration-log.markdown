@@ -1,29 +1,10 @@
 ---
 layout: post
 title: Use say and say_with_time in migrations to make a useful migration log
-author: Guillermo Álvarez Fernández (guillermo@cientifico.net)
+author: Guillermo Álvarez Fernández
 description: Use say_with_time and say in migrations will produce a more readable output in migrations. And if use correctly it could be a helpful friend when something goes wrong because normally it is stored in the deploy log
 tags:
 - migration
-likes:
-- Guillermo (guillermo@cientifico.net)
-- mironov (ant.mironov@gmail.com)
-- Andrew Nesbitt ()
-- Vijay Dev ()
-- fcoury (felipe.coury@gmail.com)
-- Guillermo Álvarez Fernández ()
-- madeofcode (markdodwell@gmail.com)
-- David Westerink (davidakachaos@gmail.com)
-- flyerhzm (flyerhzm@gmail.com)
-- jaimeiniesta (jaimeiniesta@gmail.com)
-- regedor (miguelregedor@gmail.com)
-- ecleel (ecleeld@gmail.com)
-- juancolacelli (juancolacelli@gmail.com)
-- Locke23rus (locke23rus@gmail.com)
-- bugmenot (fhugfizn@sharklasers.com)
-- xiaoronglv (xiaoronglv@hotmail.com)
-dislikes:
-- 
 ---
 Is a good practice to use **say_with_time** and **say** in migrations. When doing multiple things in a migration it is more explanatory than just show the name of the file.
 

@@ -1,18 +1,12 @@
 ---
 layout: post
 title: model.collection_model_ids (many-to-many)
-author: Wen-Tien Chang (ihower@gmail.com)
+author: Wen-Tien Chang
 description: When you want to associate a model to many association models by checkbox on view, you should take advantage of model.collection_model_ids to reduce the code in controller.
 tags:
 - controller
 - model
 - view
-likes:
-- ihower (ihower@gmail.com)
-- fireflyman (yangxiwenhuai@gmail.com)
-- juancolacelli (juancolacelli@gmail.com)
-dislikes:
-- 
 ---
 Bad Smell
 ---------
@@ -21,15 +15,15 @@ Bad Smell
       has_many :user_role_relationships
       has_many :roles, :through => :user_role_relationships
     end
-    
+
     class UserRoleRelationship < ActiveRecord::Base
       belongs_to :user
       belongs_to :role
     end
-    
+
     class Role < ActiveRecord::Base
     end
-    
+
     <% form_for @user do |f| %>
       <%= f.text_field :email %>
       <% Role.all.each |role| %>
@@ -37,7 +31,7 @@ Bad Smell
         <%= role.name %>
       <% end %>
     <% end %>
-    
+
     class UsersController < ApplicationController
       def update
         @user = User.find(params[:id])
@@ -60,7 +54,7 @@ Refactor
       <% end %>
       <%= hidden_field_tag 'user[role_ids][]', '' %>
     <% end %>
-    
+
     class UsersController < ApplicationController
       def update
         @user = User.find(params[:id])

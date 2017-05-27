@@ -1,18 +1,10 @@
 ---
 layout: post
 title: Use nested step to improve readability of ur scenario
-author: Ng Tze Yang (ngty77@gmail.com)
+author: Ng Tze Yang
 description: When a scenario has too many steps, it becomes hard to read & follow. Using nested step helps to clean up the scenario, & helps promote reusability of groups of steps, think of it as code refactoring.
 tags:
 - cucumber
-likes:
-- shanesveller (shanesveller@gmail.com)
-- dylanfm (dylan.fm@gmail.com)
-- Arnis Lapsa (arnis.lapsa@gmail.com)
-- Locke23rus (locke23rus@gmail.com)
-- juancolacelli (juancolacelli@gmail.com)
-dislikes:
-- 
 ---
 Before:
 
@@ -22,7 +14,7 @@ Before:
       And I go to login page
       And I fill in "Username" with "flyerhzm"
       And I fill in "Password" with "flyerhzm"
-      And I press "Login"      
+      And I press "Login"
       When I follow "Submit"
       Then I should see "Share a Rails Best Practice" page
 

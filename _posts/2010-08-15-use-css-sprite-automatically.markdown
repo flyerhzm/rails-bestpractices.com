@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Use css sprite automatically
-author: Richard Huang (flyerhzm@gmail.com)
+author: Richard Huang
 description: Using css sprite can reduce a large number of http requests, so it makes the web page loaded much faster. It it painful to composite a lot of images manually, do it automatically.
 tags:
 - plugin
@@ -9,19 +9,6 @@ tags:
 - css sprite
 - convention
 - assets
-likes:
-- flyerhzm (flyerhzm@gmail.com)
-- questioner (questioner@gmail.com)
-- Cédric Darricau ()
-- mattiasjes (mpj@mpj.me)
-- zcq100 (zcq100@gmail.com)
-- des (Ijon57@gmail.com)
-- juancolacelli (juancolacelli@gmail.com)
-- anga (andres.b.dev@gmail.com)
-- luckyjazzbo (luckyjazzbo@gmail.com)
-- PsiCat (ogealter@gmail.com)
-dislikes:
-- 
 ---
 The advantage of using the css sprite is to reduce a large number of http requests, so it makes the web page loaded much faster. I often find it is painful to compose a lot of images into one css sprite image and measure the x and y positions for each image. Besides this, it always causes conflict when more than one person change the css sprite image.
 

@@ -1,25 +1,11 @@
 ---
 layout: post
 title: Generate polymorphic url
-author: Richard Huang (flyerhzm@gmail.com)
+author: Richard Huang
 description: If you want to generate different urls according to different objects, you should use the polymorphic_path/polymorphic_url to simplify the url generation.
 tags:
 - view
 - helper
-likes:
-- grigio ()
-- flyerhzm (flyerhzm@gmail.com)
-- Sulymosi Gergő ()
-- ripnix ()
-- José Galisteo Ruiz ()
-- indrekj (indrek@urgas.eu)
-- samir (samirbraga@gmail.com)
-- juancolacelli (juancolacelli@gmail.com)
-- Locke23rus (locke23rus@gmail.com)
-- dgilperez (dgilperez@gmail.com)
-- chalcchuck (chalcchuck@gmail.com)
-dislikes:
-- 
 ---
 Imagine that we have three models, Post, News and Comment. It's common that a post has many comments and a news has many comments, so we define them as
 

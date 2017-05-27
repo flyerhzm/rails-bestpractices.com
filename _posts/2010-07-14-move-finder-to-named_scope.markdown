@@ -1,29 +1,12 @@
 ---
 layout: post
 title: Move finder to named_scope
-author: Wen-Tien Chang (ihower@gmail.com)
+author: Wen-Tien Chang
 description: Complex finders in controller make application hard to maintain. Move them into the model as named_scope can make the controller simple and the complex find logics are all in models.
 tags:
 - rails2
 - controller
 - model
-likes:
-- flyerhzm (flyerhzm@gmail.com)
-- ihower (ihower@gmail.com)
-- pedromtavares (pedromateustavares@gmail.com)
-- fireflyman (yangxiwenhuai@gmail.com)
-- juancolacelli (juancolacelli@gmail.com)
-- rgo (contacto@rafagarcia.net)
-- tyoc213 (tyoc213@tyoc.mx)
-- mintylapirate (minhtrietle@yahoo.com)
-- khani3s (felipenavas@gmail.com)
-- shamithc (shamithc@gmail.com)
-- lwoodson (lance@webmaneuvers.com)
-- ph0t0n_ (b0rn2c0d3@gmail.com)
-- bugmenot (fhugfizn@sharklasers.com)
-- allemoreira (alessandro.moreira@gmail.com)
-dislikes:
-- 
 ---
 Bad Smell
 ---------
@@ -33,7 +16,7 @@ Bad Smell
         @published_posts = Post.find(:all, :conditions => { :state => 'published' },
                                            :limit => 10,
                                            :order => 'created_at desc')
-    
+
         @draft_posts = Post.find(:all, :conditions => { :state => 'draft' },
                                        :limit => 10,
                                        :order => 'created_at desc')
@@ -55,7 +38,7 @@ Refactor
         @draft_posts = Post.draft
       end
     end
-    
+
     class Post < ActiveRecord::Base
       named_scope :published, :conditions => { :state => 'published' },
                               :limit => 10,

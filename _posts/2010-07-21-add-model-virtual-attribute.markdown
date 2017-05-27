@@ -1,22 +1,11 @@
 ---
 layout: post
 title: Add model virtual attribute
-author: Wen-Tien Chang (ihower@gmail.com)
+author: Wen-Tien Chang
 description: Do not assign the model's attributes directly in controller. Add model virtual attribute to move the assignment to model.
 tags:
 - controller
 - model
-likes:
-- ihower (ihower@gmail.com)
-- flyerhzm (flyerhzm@gmail.com)
-- pedromtavares (pedromateustavares@gmail.com)
-- Aditya Sanghi ()
-- juancolacelli (juancolacelli@gmail.com)
-- leolukin (leolukin@gmail.com)
-- ph0t0n_ (b0rn2c0d3@gmail.com)
-- bugmenot (fhugfizn@sharklasers.com)
-dislikes:
-- 
 ---
 Bad Smell
 ---------
@@ -24,7 +13,7 @@ Bad Smell
     <% form_for @user do |f| %>
       <%= text_field_tag :full_name %>
     <% end %>
-    
+
     class UsersController < ApplicationController
       def create
         @user = User.new(params[:user])
@@ -45,18 +34,18 @@ Refactor
       def full_name
         [first_name, last_name].join(' ')
       end
-    
+
       def full_name=(name)
         split = name.split(' ', 2)
         self.first_name = split.first
         self.last_name = split.last
       end
     end
-    
+
     <% form_for @user do |f| %>
       <%= f.text_field :full_name %>
     <% end %>
-    
+
     class UsersController < ApplicationController
       def create
         @user = User.create(params[:user])

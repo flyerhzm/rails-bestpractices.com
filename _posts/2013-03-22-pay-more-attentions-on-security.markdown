@@ -1,15 +1,10 @@
 ---
 layout: post
 title: Pay more attentions on security
-author: Richard Huang (flyerhzm@gmail.com)
+author: Richard Huang
 description: Recently we saw rails exposed some security issues, github was attacked, rubygems.org was crashed, they all remind us we must pay more attentions on our rails projects.
 tags:
 - security
-likes:
-- flyerhzm (flyerhzm@gmail.com)
-- 风之暗殇典 (gaodu328110@163.com)
-dislikes:
-- 
 ---
 Rails is still one of the best frameworks to build websites, it solved a lot of security issues by default, like SQL injection and Cross-Site Scripting. Thanks for the rails community, people report security issues, rails team will fix them and release patches asap, all we should do is to keep our rails projects up to date.
 

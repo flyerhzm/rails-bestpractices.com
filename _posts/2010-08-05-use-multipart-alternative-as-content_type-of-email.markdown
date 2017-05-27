@@ -1,18 +1,10 @@
 ---
 layout: post
 title: Use multipart/alternative as content_type of email
-author: Richard Huang (flyerhzm@gmail.com)
+author: Richard Huang
 description: Rails uses plain/text as the default content_type for sending email, you should change it to multipart/alternative that email clients can display html formatted email if they support and display plain text email if they don't support html format.
 tags:
 - mailer
-likes:
-- flyerhzm (flyerhzm@gmail.com)
-- eric (eric@pixelwareinc.com)
-- questioner (questioner@gmail.com)
-- mironov (ant.mironov@gmail.com)
-- Locke23rus (locke23rus@gmail.com)
-dislikes:
-- juancolacelli (juancolacelli@gmail.com)
 ---
 Not all the email clients support html format well, we should make our sent emails support  both plain text and html format for different email clients.
 

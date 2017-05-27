@@ -1,36 +1,17 @@
 ---
 layout: post
 title: Keep code struture in models consistent
-author: Guo Lei (guolei9@gmail.com)
-description: When the business logic of models becomes complex, it's very helpful to keep a consistent code structure that is agreed by team members.  
+author: Guo Lei
+description: When the business logic of models becomes complex, it's very helpful to keep a consistent code structure that is agreed by team members.
 tags:
 - model
-likes:
-- flyerhzm (flyerhzm@gmail.com)
-- 3en (ben@benmatthew.net)
-- lporras16 (lporras16@hotmail.com)
-- avocade (avocade@gmail.com)
-- juancolacelli (juancolacelli@gmail.com)
-- romanvbabenko (romanvbabenko@gmail.com)
-- Locke23rus (locke23rus@gmail.com)
-- anga (andres.b.dev@gmail.com)
-- yorzi (wangyaodi@gmail.com)
-- tomthorgal (thomas.vollath@gmail.com)
-- ikbear (sunikbear@gmail.com)
-- greg2502 (greg2502@gmail.com)
-- seyyah (seyyah@bil.omu.edu.tr)
-- ecoologic (erikecoologic@gmail.com)
-- N8Gard (nate.norrgard@gmail.com)
-- alauper (adamlauper@gmail.com)
-dislikes:
-- 
 ---
-Following Rails conventions, life is happy. It can be happier if we create conventions for codes in models, especially when there's multiple programmers working on the same model.  
+Following Rails conventions, life is happy. It can be happier if we create conventions for codes in models, especially when there's multiple programmers working on the same model.
 
 One example:
 (From top to bottom)
 
- 1. associations 
+ 1. associations
  2. scopes
  3. class methods
  4. validates
@@ -72,7 +53,7 @@ Code example:
 
     end
 
- 
+
 
 
 

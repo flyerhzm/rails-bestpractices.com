@@ -1,24 +1,11 @@
 ---
 layout: post
 title: Select specific fields for performance
-author: Richard Huang (flyerhzm@gmail.com)
+author: Richard Huang
 description: In a system like forum, the title and body is displayed on show page, but only title is on index page. You should use select in query to speed up the query and save memory.
 tags:
 - performance
 - query
-likes:
-- flyerhzm (flyerhzm@gmail.com)
-- Priit Tamboom ()
-- loushizan (loushizan@gmail.com)
-- Mikhail ()
-- Marcelo G. Silva (mgswolf@gmail.com)
-- dchou (dchou@iscreen.com)
-- juancolacelli (juancolacelli@gmail.com)
-- PsiCat (ogealter@gmail.com)
-dislikes:
-- railsfan (railsfan@gmail.com)
-- José Galisteo Ruiz ()
-- mtodd (chiology@gmail.com)
 ---
 Before
 ------

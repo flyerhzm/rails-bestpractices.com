@@ -1,24 +1,12 @@
 ---
 layout: post
 title: Use batched finder for large data query
-author: Richard Huang (flyerhzm@gmail.com)
+author: Richard Huang
 description: If you want to do a large data query such as finding all the 10,000,000 users to send email to them, you should use batched finder to avoid eating too much memory.
 tags:
 - model
 - performance
 - task
-likes:
-- flyerhzm (flyerhzm@gmail.com)
-- johnson (johnsonqu@gmail.com)
-- Vijay Dev ()
-- AndrÃ© Moreira ã‚ªã‚¿ã‚¯ ()
-- David Westerink (davidakachaos@gmail.com)
-- samir (samirbraga@gmail.com)
-- juancolacelli (juancolacelli@gmail.com)
-- Locke23rus (locke23rus@gmail.com)
-- PsiCat (ogealter@gmail.com)
-dislikes:
-- 
 ---
 Imagine you have a newsletter system which is very famous and has 10,000,000 users. Every Monday morning, the system will send emails to all of the users.
 

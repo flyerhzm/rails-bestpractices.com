@@ -1,42 +1,11 @@
 ---
 layout: post
 title: Not use time_ago_in_words
-author: Richard Huang (flyerhzm@gmail.com)
-description: It's very common for a rails developer to use time_ago_in_words to display time like "5 minutes ago", but it's too expensive to calculate the time in server side, you should utilize client cpu to calculate the time ago. 
+author: Richard Huang
+description: It's very common for a rails developer to use time_ago_in_words to display time like "5 minutes ago", but it's too expensive to calculate the time in server side, you should utilize client cpu to calculate the time ago.
 tags:
 - helper
 - javascript
-likes:
-- flyerhzm (flyerhzm@gmail.com)
-- yedingding ()
-- whoward (whoward.tke@gmail.com)
-- nathan.f77 (nathan.f77@gmail.com)
-- BlackFoks (blackfoks@gmail.com)
-- apirak (apirakb@gmail.com)
-- rizidoro (izidoro.rafa@gmail.com)
-- dwaynemac (dwaynemac@gmail.com)
-- rtlong (ryan@rtlong.com)
-- empty (mohammad.elabid@gmail.com)
-- juanm55 (juanm55@gmail.com)
-- samir (samirbraga@gmail.com)
-- matthewcford (matt@bitzesty.com)
-- 29decibel (mike.d.1984@gmail.com)
-- goldentickets (dikaioo@gmail.com)
-- boobmoom (boobmoom@gmail.com)
-- apprenticedev (apprenticedev@gmail.com)
-- rahulgarg (rkgarg90@gmail.com)
-- jaimeiniesta (jaimeiniesta@gmail.com)
-- arunkarthick (arunkarthick.it@gmail.com)
-- kuroda (t-kuroda@oiax.jp)
-- danpolites (dpolites@gmail.com)
-- PikachuEXE (pikachuexe@gmail.com)
-- _ismaelga (ismaelga@gmail.com)
-- ksz2k (krzysiek@kstech.pl)
-- sumanranjanpanda (sumanranjanpanda@hotmail.com)
-- vijaykoogu (vijaykoogu@gmail.com)
-- nabinno (nab@blahfe.com)
-dislikes:
-- rwz (rwz@duckroll.ru)
 ---
 Rails provides a helper method time_ago_in_words to display the distance between one time and now, like "5 minute ago", it's very useful.
 

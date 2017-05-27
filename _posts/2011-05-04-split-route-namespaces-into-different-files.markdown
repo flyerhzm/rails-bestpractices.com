@@ -1,45 +1,10 @@
 ---
 layout: post
 title: split route namespaces into different files
-author: Richard Huang (flyerhzm@gmail.com)
+author: Richard Huang
 description: the routes will become complicated with the growth of your application, contain different namespaces, each with a lot of resources and custom routes, it would be better to split routes into different files according to the namespaces, which makes it easy to maintain the complicated routes.
 tags:
 - route
-likes:
-- Leventix (bagilevi@gmail.com)
-- flyerhzm (flyerhzm@gmail.com)
-- jeromelefeuvre (jerome.lefeuvre@gmail.com)
-- itima_ru (alexey@itima.ru)
-- CvX (JRadosz@gmail.com)
-- calas (calas@qvitta.net)
-- zedtux (zedtux@zedroot.org)
-- iktorn (iktorn@gmail.com)
-- mdorfin (dorofienko@gmail.com)
-- dimko (deemox@gmail.com)
-- dhruvasagar.ds (dhruva.sagar@yahoo.com)
-- zcq100 (zcq100@gmail.com)
-- juancolacelli (juancolacelli@gmail.com)
-- romanvbabenko (romanvbabenko@gmail.com)
-- charlysisto (charlysisto@gmail.com)
-- anga (andres.b.dev@gmail.com)
-- gri0n (lejazzeux@gmail.com)
-- haru01 (eiji.ienaga@gmail.com)
-- jrhicks (Jrhicks@gmail.com)
-- sectronov (sectronix@gmail.com)
-- luis_ca (luis.ca@gmail.com)
-- olistik (maurizio.demagnis@gmail.com)
-- sumitasok (sumitasok@gmail.com)
-- chrishein (me@christopherhein.com)
-- nashiki (nashiki.shigeyuki@cyberwave.jp)
-- hsps9.99 (mailme@hsps.in)
-- taras (tarasst@gmail.com)
-- suraj (sixstring@gmail.com)
-- mayinx (mayinxx@web.de)
-- xiaoronglv (xiaoronglv@hotmail.com)
-- beata (nahoyabe@gmail.com)
-- edgar.ortega.ramirez (edgarortegaramirez@gmail.com)
-dislikes:
-- 
 ---
 I experienced that with the growth of application, the routes becomes very complicated. The following is a simple example
 
@@ -66,7 +31,7 @@ Before
         admin.logout '/logout', :controller => 'sessions', :action => 'destroy'
         admin.login '/login', :controller => 'sessions', :action => 'create'
       end
-    
+
       map.namespace :api do |api|
         api.resources :posts
         api.resources :comments

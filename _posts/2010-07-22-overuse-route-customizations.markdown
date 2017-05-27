@@ -1,18 +1,11 @@
 ---
 layout: post
 title: Overuse route customizations
-author: Wen-Tien Chang (ihower@gmail.com)
+author: Wen-Tien Chang
 description: According to Roy Fieldingâ€™s doctoral thesis, we should use restful routes to represent the resource and its state. Use the default 9 actions without overusing route customizations.
 tags:
 - rails2
 - route
-likes:
-- ihower (ihower@gmail.com)
-- flyerhzm (flyerhzm@gmail.com)
-- guitsaru (guitsaru@gmail.com)
-- juancolacelli (juancolacelli@gmail.com)
-dislikes:
-- 
 ---
 Bad Smell
 ---------

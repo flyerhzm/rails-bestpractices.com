@@ -1,34 +1,11 @@
 ---
 layout: post
 title: remove trailing whitespace
-author: Richard Huang (flyerhzm@gmail.com)
+author: Richard Huang
 description: Trailing whitespace always makes noises in version control system, it is meaningless. We should remove trailing whitespace to avoid annoying other team members.
 tags:
-- collaboration
-- git
+- whitespace
 - version control
-likes:
-- flyerhzm (flyerhzm@gmail.com)
-- Mikhail ()
-- Aditya Sanghi ()
-- Artur Roszczyk ()
-- jrichardlai (jrichardlai@gmail.com)
-- avocade (avocade@gmail.com)
-- leobessa (leobessa@gmail.com)
-- dimus (dmozzherin@gmail.com)
-- elizabrock (elizabrock@gmail.com)
-- regedor (miguelregedor@gmail.com)
-- Leventix (bagilevi@gmail.com)
-- austinthecoder (austinthecoder@gmail.com)
-- juancolacelli (juancolacelli@gmail.com)
-- kuroda (t-kuroda@oiax.jp)
-- CITguy (rhino.citguy@gmail.com)
-- fillky (filcak.t@gmail.com)
-- leolukin (leolukin@gmail.com)
-- bugmenot (fhugfizn@sharklasers.com)
-- PriteshRocks (prit.jain86@gmail.com)
-dislikes:
-- 
 ---
 I can't remember how many times the trailing whitespace makes noises in my git commits, like
 

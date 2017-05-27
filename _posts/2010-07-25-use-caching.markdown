@@ -1,26 +1,10 @@
 ---
 layout: post
 title: Use caching !
-author: Gregory Durelle (gregory.durelle@gmail.com)
+author: Gregory Durelle
 description: Using the cache will speed up your application response time a lot. In fact, when people will request your pages, rails won't be requested, apache will serve the cached pages, thus double advantage, faster pages response time Lower charge on your server
 tags:
 - cache
-likes:
-- gdurelle (gregory.durelle@gmail.com)
-- eric (eric@pixelwareinc.com)
-- PabloC (pablocorral@gmail.com)
-- PabloC (pablocorral@gmail.com)
-- PabloC (pablocorral@gmail.com)
-- hlxwell (hlxwell@gmail.com)
-- iGEL (igel@igels.net)
-- dylanfm (dylan.fm@gmail.com)
-- soulim (soulim@gmail.com)
-- Abdulaziz Al-Shetwi ()
-- David Westerink (davidakachaos@gmail.com)
-- alecchyi (alecchyi@gmail.com)
-- juancolacelli (juancolacelli@gmail.com)
-dislikes:
--
 ---
 Caching is really simple, see page caching.
 

@@ -1,22 +1,16 @@
 ---
 layout: post
 title: Use pickle & ur choice factory for data setup in ur cucumber features (revised)
-author: Ng Tze Yang (ngty77@gmail.com)
+author: Ng Tze Yang
 description: Data setup is sometimes painful in features writing for cucumber. Use pickle & factory of ur choice to make it less painful.
 tags:
 - cucumber
-likes:
-- dylanfm (dylan.fm@gmail.com)
-- joshcrews (crews.josh@gmail.com)
-- juancolacelli (juancolacelli@gmail.com)
-dislikes:
-- 
 ---
 Pickle is indeed a *GEM*, use it to make data setup less painful, here are some quick examples:
 
     # this step creates a post (using factory :post) with title "first best practice"
     Given a post exists with title: "first best practice"
-    
+
     # this step creates user superman (using factory :superman)
     Given superman exists
 

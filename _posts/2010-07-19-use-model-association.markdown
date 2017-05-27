@@ -1,28 +1,11 @@
 ---
 layout: post
 title: Use model association
-author: Wen-Tien Chang (ihower@gmail.com)
+author: Wen-Tien Chang
 description: Use model association to avoid assigning reference in controller.
 tags:
 - controller
 - model
-likes:
-- ihower (ihower@gmail.com)
-- flyerhzm (flyerhzm@gmail.com)
-- Richard Boldway (richard@boldway.org)
-- dimascyriaco (dimascyriaco@gmail.com)
-- sbwdev (sbw.dev@gmail.com)
-- juancolacelli (juancolacelli@gmail.com)
-- nathanvda (nathan@dixis.com)
-- ryancheung (ryancheung.go@gmail.com)
-- valner.medeiros (valner.medeiros@gmail.com)
-- barthez.slavik (barthez.slavik@gmail.com)
-- ph0t0n_ (b0rn2c0d3@gmail.com)
-- bugmenot (fhugfizn@sharklasers.com)
-- diegoachury (achurycompany@gmail.com)
-- zx1986 (zx1986@gmail.com)
-dislikes:
-- 
 ---
 Bad Smell
 ---------
@@ -46,7 +29,7 @@ Refactor
         @post.save
       end
     end
-    
+
     class User < ActiveRecord::Base
       has_many :posts
     end

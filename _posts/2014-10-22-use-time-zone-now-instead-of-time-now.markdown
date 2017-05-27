@@ -1,14 +1,10 @@
 ---
 layout: post
 title: Use Time.zone.now instead of Time.now
-author: Dan Kohn (dan@dankohn.com)
+author: Dan Kohn
 description: The ActiveSupport method Time.zone.now should be used in place of the Ruby method Time.now to pickup the local time zone.
 tags:
 - timezone
-likes:
-- alexey.shein.1 (alexey@besmarty.ru)
-dislikes:
-- pftg (paul.nikitochkin@gmail.com)
 ---
 ## Before
 

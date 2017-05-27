@@ -1,19 +1,11 @@
 ---
 layout: post
 title: Don't modify the params hash
-author: David Davis (ddavis1@gmail.com)
+author: David Davis
 description: The params hash contains all the data that was submitted from a request. If you modify it, later code won't have access to it. Instead, copy the params hash and modify the copy.
 tags:
 - controller
 - params
-likes:
-- t27duck (t27duck@gmail.com)
-- PriteshRocks (prit.jain86@gmail.com)
-- sandeepkrao (skr.ymca@gmail.com)
-- aaronpark (apark73@gmail.com)
-- budhrg (budhrg@gmail.com)
-dislikes:
-- 
 ---
 ## Before
 
@@ -45,7 +37,7 @@ Better yet, create a separate params method like you would with strong_parameter
     end
 
     private
-    
+
     def search_params
       # params.except(:action, :controller)
       params.permit(:user_id, :name)

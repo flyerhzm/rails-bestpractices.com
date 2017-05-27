@@ -1,18 +1,11 @@
 ---
 layout: post
 title: Move Model Logic into the Model
-author: Wen-Tien Chang (ihower@gmail.com)
+author: Wen-Tien Chang
 description: In MVC model, controller should be simple, the business logic is model's responsibility. So we should move logic from controller into the model.
 tags:
 - controller
 - model
-likes:
-- ihower (ihower@gmail.com)
-- flyerhzm (flyerhzm@gmail.com)
-- pake007 (pake007@gmail.com)
-- juancolacelli (juancolacelli@gmail.com)
-dislikes:
-- mdeering (mdeering@mdeering.com)
 ---
 Bad Smell
 ---------
@@ -27,7 +20,7 @@ Bad Smell
         else
           @post.popular = 0
         end
-    
+
         redirect_to post_url(@post)
       end
     end
@@ -48,12 +41,12 @@ Refactor
         end
       end
     end
-    
+
     class PostsController < ApplicationController
       def publish
         @post = Post.find(params[:id])
         @post.publish
-    
+
         redirect_to post_url(@post)
       end
     end

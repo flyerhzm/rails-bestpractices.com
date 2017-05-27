@@ -1,17 +1,10 @@
 ---
 layout: post
 title: monitor your backend services
-author: Richard Huang (flyerhzm@gmail.com)
+author: Richard Huang
 description: We always have multiple processes for rails websites, if any of them crashed, your website failed, so it would be better to monitor all of the processes and automatically restart crashed processes.
 tags:
 - system administration
-likes:
-- flyerhzm (flyerhzm@gmail.com)
-- Mike (mike@odania-it.de)
-- rdasarminus (rdasarminus@gmail.com)
-- brytiuk (brytiuk@ukr.net)
-dislikes:
-- 
 ---
 I have maintained [rails-bestpractices.com](rails-bestpractices.com) website for several years, not only code, but also server administration. The website is running on [linode](http://www.linode.com/?r=aa5686444f1835b95ee23ee5321824f6bc75c550) with multiple processes:
 
@@ -36,9 +29,9 @@ Here is the god status
 Monit status looks more powerful
 
     $ sudo monit status
-    The Monit daemon 5.0.3 uptime: 2d 18h 15m 
+    The Monit daemon 5.0.3 uptime: 2d 18h 15m
 
-    System 'app.railsbp.com'
+    System 'xinminlabs.com'
       status                            running
       monitoring status                 monitored
       load average                      [0.00] [0.04] [0.05]
@@ -51,7 +44,7 @@ Monit status looks more powerful
       monitoring status                 monitored
       pid                               2246
       parent pid                        1
-      uptime                            8d 18h 13m 
+      uptime                            8d 18h 13m
       children                          0
       memory kilobytes                  20628
       memory kilobytes total            20628

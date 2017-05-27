@@ -1,30 +1,11 @@
 ---
 layout: post
 title: Use STI and polymorphic model for multiple uploads
-author: Richard Huang (flyerhzm@gmail.com)
+author: Richard Huang
 description: This is a flexible and reusable solution for multiple uploads, using STI model to save all the uploaded assets in one "assets" table and using polymorphic model to reuse "Asset" model in different uploadable models.
 tags:
 - model
 - upload
-likes:
-- flyerhzm (flyerhzm@gmail.com)
-- questioner (questioner@gmail.com)
-- mrpink (jantzeno@msn.com)
-- mlanza (mlanza@comcast.net)
-- timurv (me@timurv.ru)
-- ahinni (aaron@vedadev.com)
-- chaserx (chase.southard@gmail.com)
-- matthewcford (matt@bitzesty.com)
-- juancolacelli (juancolacelli@gmail.com)
-- Locke23rus (locke23rus@gmail.com)
-- megatux (megatux@gmail.com)
-- shemerey (shemerey@gmail.com)
-- arunkumar339 (arunkumar339@gmail.com)
-- lisovskyvlad (lisovskyvlad@gmail.com)
-- beata (nahoyabe@gmail.com)
-dislikes:
-- eimantas (eimantas@vaiciunas.info)
-- José Galisteo Ruiz ()
 ---
 This is extracted from my answer of [How do you design your model for multiple upload?][1]
 
@@ -84,21 +65,21 @@ So the relationships between asset and post, site, question are polymorphic as f
     class Post < ActiveRecord::Base
       has_one :video, :as => :assetable, :class_name => "Post::Video", :dependent => :destroy
       has_many :images, :as => :assetable, :class_name => "Post::Image", :dependent => :destroy
-      
+
       accepts_nested_attributes_for :video, :images
     end
 
     # app/models/site.rb
     class Site < ActiveRecord::Base
       has_one :logo, :as => :assetable, :class_name => "Site::Logo", :dependent => :destroy
-      
+
       accepts_nested_attributes_for :logo
     end
 
     # app/models/question.rb
     class Question < ActiveRecord::Base
       has_many :images, :as => :assetable, :class_name => "Question::Image", :dependent => :destroy
-      
+
       accepts_nested_attributes_for :images
     end
 
@@ -137,7 +118,7 @@ Before you handle the form, be sure you have build assets objects, such as build
     end
 
 Then you can save the post object with uploaded assets as normal
-  
+
     def create
       @post = Post.new(params[:post])
       if @post.save

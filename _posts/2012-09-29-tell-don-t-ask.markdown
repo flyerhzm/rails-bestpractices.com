@@ -1,31 +1,11 @@
 ---
 layout: post
 title: Tell, don't ask
-author: Zamith (zamith.28@gmail.com)
+author: Zamith
 description: Methods should focus on what you want done and not how you want it.
 tags:
 - model
 - refactor
-likes:
-- zigomir (zigomir@gmail.com)
-- rmdmachado (rmdmachado@gmail.com)
-- andrefs (andrefs@cpan.org)
-- 5thWall (5thwall@gmail.com)
-- jonathonjones (jonathonjonesphilosophy@gmail.com)
-- millisami (millisami@gmail.com)
-- antoniolorusso (antonio.lorusso@gmail.com)
-- RichGuk (richguk@gmail.com)
-- smodiz (sharonmodiz@yahoo.com)
-dislikes:
-- DanBlack (klobor@yandex.ru)
-- rwz (rwz@duckroll.ru)
-- Petr Blaho ()
-- Lukom (lllukom@gmail.com)
-- bitpimpin (m@rkcoates.com)
-- end_guy (dchapman1988@gmail.com)
-- Carlos Brando (eduardobrando@gmail.com)
-- Alfuken ()
-- zmajstor (zmajstor@me.com)
 ---
 ## Before
 

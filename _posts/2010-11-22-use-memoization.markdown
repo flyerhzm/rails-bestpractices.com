@@ -1,48 +1,10 @@
 ---
 layout: post
 title: Use memoization
-author: Richard Huang (flyerhzm@gmail.com)
+author: Richard Huang
 description: Memoization is an optimization technique used primarily to speed up computer programs by having function calls avoid repeating the calculation of results for previously-processed inputs. In rails, you can easily use memoize which is inherited from ActiveSupport::Memoizable.
 tags:
 - performance
-likes:
-- flyerhzm (flyerhzm@gmail.com)
-- Vijay Dev ()
-- Fabrice (fabrice@lunaweb.fr)
-- David Westerink (davidakachaos@gmail.com)
-- kamui (kamuigt@gmail.com)
-- Mikhail ()
-- José Galisteo Ruiz ()
-- Kevin Ansfield ()
-- Roger Campos (roger@itnig.net)
-- Roger Campos (roger@itnig.net)
-- mattiasjes (mpj@mpj.me)
-- ben (benz303bb@gmail.com)
-- iceydee (mionilsson@gmail.com)
-- itima_ru (alexey@itima.ru)
-- marsbomber (jimli@elinkmedia.net.au)
-- 360andless (beanie@benle.de)
-- ecleel (ecleeld@gmail.com)
-- donortools (ryan@donortools.com)
-- donortools (ryan@donortools.com)
-- des (Ijon57@gmail.com)
-- romanvbabenko (romanvbabenko@gmail.com)
-- juancolacelli (juancolacelli@gmail.com)
-- anga (andres.b.dev@gmail.com)
-- yorzi (wangyaodi@gmail.com)
-- gri0n (lejazzeux@gmail.com)
-- Arkham (liuju86@gmail.com)
-- frp (franchukrom@gmail.com)
-- dmdv (dimos-d@yandex.ru)
-- jaredobson (jared.dobson@live.com)
-- knightq (andrea.salicetti@gmail.com)
-- PsiCat (ogealter@gmail.com)
-- leolukin (leolukin@gmail.com)
-- dimianstudio (dimianstudio@gmail.com)
-- beata (nahoyabe@gmail.com)
-- nabinno (nab@blahfe.com)
-dislikes:
-- 
 ---
 Memoization is an optimization technique used primarily to speed up computer programs by having function call avoid repeat the calculation of results for previously-processed input. Here I will give you an example.
 

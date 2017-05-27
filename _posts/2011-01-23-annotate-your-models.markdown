@@ -1,47 +1,12 @@
 ---
 layout: post
 title: Annotate your models
-author: Richard Huang (flyerhzm@gmail.com)
+author: Richard Huang
 description: Are you tired of going to schema.rb to find your table structures information? It would be better to list all the attributes of the model in the model itself.
 tags:
 - model
 - gem
 - comment
-likes:
-- flyerhzm (flyerhzm@gmail.com)
-- grigio ()
-- Alexandru Ungur ()
-- akoc (aivars.akots@gmail.com)
-- Jonathan Gross ()
-- rlmflores (mail@rodrigoflores.org)
-- Matenia Rossides ()
-- huacnlee (huacnlee@gmail.com)
-- Pascal Van Hecke ()
-- 29decibel (mike.d.1984@gmail.com)
-- d135-1r43 (markus@herhoffer.net)
-- andreyviana (andreydjason@gmail.com)
-- ash@greenworm.com.au (ash@greenworm.com.au)
-- karthik_ak (mindaslab@gmail.com)
-- romanvbabenko (romanvbabenko@gmail.com)
-- gouthamvel (gouthamvel@gmail.com)
-- iceydee (mionilsson@gmail.com)
-- zanst (me@zan.st)
-- ecleel (ecleeld@gmail.com)
-- dhruvasagar.ds (dhruva.sagar@yahoo.com)
-- juancolacelli (juancolacelli@gmail.com)
-- tomthorgal (thomas.vollath@gmail.com)
-- jrhicks (Jrhicks@gmail.com)
-- pain666 (nick@firedev.com)
-- timmyweb (timmy@toox.pl)
-- CITguy (rhino.citguy@gmail.com)
-- GearHead (gearhead@it-primorye.ru)
-- fabioruxo (fabioruxo@gmail.com)
-- leolukin (leolukin@gmail.com)
-- khebbie (klaus@hebsgaard.dk)
-dislikes:
-- José Galisteo Ruiz ()
-- tilsammans (joost@spacebabies.nl)
-- mtodd (chiology@gmail.com)
 ---
 Before
 ---------
@@ -76,7 +41,7 @@ The two models are defined in post.rb and comment.rb files, from these two files
       end
     end
 
-After reading the schema.rb, we know the Post model has attributes title and body, and the Comment model has attributes body. 
+After reading the schema.rb, we know the Post model has attributes title and body, and the Comment model has attributes body.
 
 I'm tired of always going to the schema.rb to find what attributes the models have, it wastes my time, of course yours, why not list them in the models themselves?
 
@@ -115,4 +80,4 @@ Some other model frameworks such as datamapper, mongomaper and mongoid directly 
 
 It's pretty amazing, I never need to go to the schema.rb anymore. It's an intuitive manner to discover all the attributes of the models.
 
-  [1]:https://github.com/ctran/annotate_models 
+  [1]:https://github.com/ctran/annotate_models

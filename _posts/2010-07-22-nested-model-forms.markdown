@@ -1,21 +1,12 @@
 ---
 layout: post
 title: Nested Model Forms
-author: Wen-Tien Chang (ihower@gmail.com)
+author: Wen-Tien Chang
 description: Use accepts_nested_attributes_for to make nested model forms much easier, this feature is provided by rails 2.3
 tags:
 - controller
 - model
 - view
-likes:
-- ihower (ihower@gmail.com)
-- pedromtavares (pedromateustavares@gmail.com)
-- Wanderwelten (wanderwelten+account@googlemail.com)
-- fireflyman (yangxiwenhuai@gmail.com)
-- juancolacelli (juancolacelli@gmail.com)
-- gri0n (lejazzeux@gmail.com)
-dislikes:
-- 
 ---
 Bad Smell
 ---------
@@ -23,23 +14,23 @@ Bad Smell
     class Product < ActiveRecord::Base
       has_one :detail
     end
-    
+
     class Detail < ActiveRecord::Base
       belongs_to :product
     end
-    
+
     <% form_for :product do |f| %>
       <%= f.text_field :title %>
       <% fields_for :detail do |detail| %>
         <%= detail.text_field :manufacturer %>
       <% end %>
     <% end %>
-    
+
     class ProductsController < ApplicationController
       def create
         @product = Product.new(params[:product])
         @detail = Detail.new(params[:detail])
-    
+
         Product.transaction do
           @product.save!
           @detail.product = @product
@@ -57,14 +48,14 @@ Refactor
       has_one :detail
       accepts_nested_attributes_for :detail
     end
-    
+
     <% form_for :product do |f| %>
       <%= f.text_field :title %>
       <% f.fields_for :detail do |detail| %>
         <%= detail.text_field :manufacturer %>
       <% end %>
     <% end %>
-    
+
     class ProductsController < ApplicationController
       def create
         @product = Product.new(params[:product])
@@ -80,11 +71,11 @@ And we can also use accepts_nested_attributes_for to simplify the one-to-many as
       has_many :tasks
       accepts_nested_attributes_for :tasks
     end
-    
+
     class Task < ActiveRecord::Base
       belongs_to :project
     end
-    
+
     <% form_for @project do |f| %>
       <%= f.text_field :name %>
       <% f.fields_for :tasks do |tasks_form| %>

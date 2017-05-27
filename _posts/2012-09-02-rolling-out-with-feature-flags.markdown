@@ -1,17 +1,10 @@
 ---
 layout: post
 title: rolling out with feature flags
-author: Richard Huang (flyerhzm@gmail.com)
+author: Richard Huang
 description: Sometimes you may face the situation that some features will be released, but you are not sure if it is friendly to end user, or if it will lead to performance issues, at that time you should use what we called "feature flags"
 tags:
 - performance
-likes:
-- flyerhzm (flyerhzm@gmail.com)
-- ck3g (kalastiuz@gmail.com)
-- zamith (zamith.28@gmail.com)
-- PsiCat (ogealter@gmail.com)
-dislikes:
-- 
 ---
 Rolling out with feature flags means the released feature can be fully or partially turn on/off at the running time. We have a private repository named feature_flags, it allows to release some features to production, but the features are disabled by default, we can activate it after deployment, we can activate it to specific users, to user percentages (like 50% users), or to all users.
 
@@ -59,8 +52,8 @@ We will keep monitoring our server performance, it we saw any spike, we will dis
 and then turn on it after airbrake goes on
 
     $features.activate_all(:airbrake)
-    
+
 
 It works very well in our product, but unfortunately feature_flags is still our own private repository, you can't use it now, please don't blame me. But after searching on github, I found [jamesgolick's rollout][0] gem, which provides very similar functionalities and it is open sourced, you can try it.
 
-[0]: https://github.com/jamesgolick/rollout 
+[0]: https://github.com/jamesgolick/rollout

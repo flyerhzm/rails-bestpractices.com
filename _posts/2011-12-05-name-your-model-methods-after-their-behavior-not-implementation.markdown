@@ -1,15 +1,10 @@
 ---
 layout: post
 title: Name your model methods after their behavior, not implementation.
-author: Brasten Sager (brasten@brasten.me)
+author: Brasten Sager
 description: Business model methods should be named after the logic / business value they provide, not the implementation details. Violations to this practice tend to show up on ActiveRecord models.
 tags:
 - model
-likes:
-- juancolacelli (juancolacelli@gmail.com)
-- alauper (adamlauper@gmail.com)
-dislikes:
--
 ---
  Before
 ------

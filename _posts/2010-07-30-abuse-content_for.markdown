@@ -1,20 +1,10 @@
 ---
 layout: post
 title: abuse content_for
-author: Jim Ruther Nill (jvnill@gmail.com)
+author: Jim Ruther Nill
 description: Use content_for for grouping html contents like javascript and css
 tags:
 - view
-likes:
-- ninyanernel (npdepolonia@gmail.com)
-- eric (eric@pixelwareinc.com)
-- AndrÃ© Moreira ã‚ªã‚¿ã‚¯ ()
-- kylemathews (kylemathews@gmail.com)
-- Locke23rus (locke23rus@gmail.com)
-- juancolacelli (juancolacelli@gmail.com)
-- simon.brandhof (simon.brandhof@gmail.com)
-dislikes:
-- qichunren (whyruby@gmail.com)
 ---
 you should have a
 
@@ -36,7 +26,7 @@ In the same way, you can have a partial that renders the sidebar of your applica
 
     # Common sidebar items here
     # Common sidebar items here
-    
+
     # Dynamic sidebar items here
     <%= yield :sidebar %>
 

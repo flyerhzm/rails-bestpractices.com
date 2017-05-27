@@ -1,19 +1,10 @@
 ---
 layout: post
 title: Check the return value of "save", otherwise use "save!"
-author: Richard Huang (flyerhzm@gmail.com)
+author: Richard Huang
 description: The "save" method on ActiveRecord returns "false" and does nothing if the record is invalid. You should always check the return value, otherwise you may inadvertently not save the record. If you think the record can never be invalid, or don't want to check the return value, use "save!"
 tags:
 - active_record
-likes:
-- danpolites (dpolites@gmail.com)
-- milushov (rails-bestpractices@milushov.ru7)
-- alauper (adamlauper@gmail.com)
-- freemanoid321 (freemanoid321@gmail.com)
-dislikes:
-- Nox (dimasavitski@gmail.com)
-- kevin.sylvestre (kevin@ksylvest.com)
-- adriano.bacha (abacha@gmail.com)
 ---
 ## Before
 

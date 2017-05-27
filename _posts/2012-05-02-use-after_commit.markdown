@@ -1,33 +1,10 @@
 ---
 layout: post
 title: use after_commit
-author: Richard Huang (flyerhzm@gmail.com)
-description: Most developers use AR callbacks after_create/after_update/after_destroy to generate background job, expire cache, etc., but they don't realize these callbacks are still wrapped in database transaction, they probably got unexpected errors on production servers. 
+author: Richard Huang
+description: Most developers use AR callbacks after_create/after_update/after_destroy to generate background job, expire cache, etc., but they don't realize these callbacks are still wrapped in database transaction, they probably got unexpected errors on production servers.
 tags:
 - model
-likes:
-- flyerhzm (flyerhzm@gmail.com)
-- samir (samirbraga@gmail.com)
-- matthewcford (matt@bitzesty.com)
-- matthewcford (matt@bitzesty.com)
-- saulius (saulius@ninja.lt)
-- saulius (saulius@ninja.lt)
-- astrauka (astrauka@gmail.com)
-- cbarton (c.chris.b@gmail.com)
-- tsyren.ochirov (nsu1team@gmail.com)
-- ilstar (xingqinglzq@gmail.com)
-- li.daobing (lidaobing@gmail.com)
-- 29decibel (mike.d.1984@gmail.com)
-- jaredobson (jared.dobson@live.com)
-- bitpimpin (m@rkcoates.com)
-- YannLugrin (yann.lugrin@sans-savoir.net)
-- PikachuEXE (pikachuexe@gmail.com)
-- viniciusgati (viniciusgati@gmail.com)
-- kushal_mistry (kushal_mistry@live.in)
-- hariharanji (hharanh.g@gmail.com)
-- ali.bugdayci.50 (bugdayci@gmail.com)
-dislikes:
-- 
 ---
 A relational database, like mysql, provides transactions to wrap several operations in one unit, make them all pass or all fail. All isolation levels except READ UNCOMMITTED don't allow read data changes until they are committed in other transaction. If you don't realize it, you probably introduce some unexpected errors.
 

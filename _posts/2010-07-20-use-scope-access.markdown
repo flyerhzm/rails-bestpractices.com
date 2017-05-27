@@ -1,31 +1,10 @@
 ---
 layout: post
 title: Use scope access
-author: Wen-Tien Chang (ihower@gmail.com)
+author: Wen-Tien Chang
 description: You can use scope access to avoid checking the permission by comparing the owner of object with current_user in controller.
 tags:
 - controller
-likes:
-- ihower (ihower@gmail.com)
-- flyerhzm (flyerhzm@gmail.com)
-- klebervirgilio (klebervirgilio@gmail.com)
-- xijo (xijo@gmx.de)
-- Richard Boldway (richard@boldway.org)
-- DefV (rbp@defv.be)
-- madeofcode (markdodwell@gmail.com)
-- Derek Croft ()
-- heironimus (kyle@heironimus.com)
-- sbwdev (sbw.dev@gmail.com)
-- akoc (aivars.akots@gmail.com)
-- Bohdan Pohorilets (bod-lv@bigmir.net)
-- matthewcford (matt@bitzesty.com)
-- juancolacelli (juancolacelli@gmail.com)
-- gri0n (lejazzeux@gmail.com)
-- Julescopeland (jules@julescopeland.com)
-- lassebunk (lassebunk@gmail.com)
-- bugmenot (fhugfizn@sharklasers.com)
-dislikes:
-- 
 ---
 If you check the permission by comparing the owner of object with current_user, it's verbose and ugly, you can use scope access to avoid this.
 
@@ -54,7 +33,7 @@ Refactor
       end
     end
 
-So we find the post only in current_user.posts that can promise the post is owned by current_user, if not, a 404 error will be raised. 
+So we find the post only in current_user.posts that can promise the post is owned by current_user, if not, a 404 error will be raised.
 
 We have no needs to compare the owner with current_user, just use scope access to make permission check simpler.
 

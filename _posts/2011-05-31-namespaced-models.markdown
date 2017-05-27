@@ -1,15 +1,10 @@
 ---
 layout: post
 title: Namespaced models
-author: Guo Lei (guolei9@gmail.com)
+author: Guo Lei
 description: Make the app/models more clear using namespaced models
 tags:
 - model
-likes:
-- juancolacelli (juancolacelli@gmail.com)
-- dkerimdjanov (butchersenator@gmail.com)
-dislikes:
-- Locke23rus (locke23rus@gmail.com)
 ---
 When the application grows bigger, it's kinda messy to keep all the models under app/models. To make the codes more readable, it makes sense to use namespaced models.
 

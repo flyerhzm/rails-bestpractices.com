@@ -1,19 +1,11 @@
 ---
 layout: post
 title: Needless deep nesting
-author: Wen-Tien Chang (ihower@gmail.com)
+author: Wen-Tien Chang
 description: Some people will define 3 or more level nested routes, it's a kind of over design and not recommended.
 tags:
 - rails2
 - route
-likes:
-- ihower (ihower@gmail.com)
-- flyerhzm (flyerhzm@gmail.com)
-- hooopo (hoooopo@gmail.com)
-- railsjedi (railsjedi@gmail.com)
-- juancolacelli (juancolacelli@gmail.com)
-dislikes:
-- junya (junyaogura@gmail.com)
 ---
 Bad Smell
 ---------
@@ -23,7 +15,7 @@ Bad Smell
         comment.resources :favorites
       end
     end
-    
+
     <%= link_to post_comment_favorite_path(@post, @comment, @favorite) %>
 
 Is it really necessary to define the 3-level nested routes? Using nested routes means the nested resources is belongs to the parent resources, as example, the resources comments belong to post. But there is no need to define the resources favorites belong to post, because favorites belong to comment.
@@ -36,11 +28,11 @@ Refactor
     map.resources :post do |post|
       post.resources :comments
     end
-    
+
     map.resources :comments do |comment|
       comment.resources :favorites
     end
-    
+
     <%= link_to comment_favorite_path(@comment, @favorite) %>
 
 So we refactor the 3-level nested routes to two 2-level nested routes. And our urls for favorites are shorter now.

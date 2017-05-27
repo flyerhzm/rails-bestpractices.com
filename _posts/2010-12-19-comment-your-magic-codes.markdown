@@ -1,20 +1,11 @@
 ---
 layout: post
 title: comment your magic codes
-author: Richard Huang (flyerhzm@gmail.com)
+author: Richard Huang
 description: Ruby/Rails provides a lot of magic codes, especially for metaprogramming, they are powerful, less codes to implement more functions, but they are not intuition, you should write good comment for your magic codes.
 tags:
 - convention
 - comment
-likes:
-- flyerhzm (flyerhzm@gmail.com)
-- andreyviana (andreydjason@gmail.com)
-- Leventix (bagilevi@gmail.com)
-- juancolacelli (juancolacelli@gmail.com)
-dislikes:
-- indrekj (indrek@urgas.eu)
-- austinthecoder (austinthecoder@gmail.com)
-- mlsquires (michael_lee_squires@pobox.com)
 ---
 Ruby/Rails provides a lot of magic codes, especially for metaprogramming, they are powerful, less codes to implement more functions, but they are not intuition.
 

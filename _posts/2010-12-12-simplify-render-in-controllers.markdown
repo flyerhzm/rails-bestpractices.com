@@ -1,22 +1,10 @@
 ---
 layout: post
 title: Simplify render in controllers
-author: Richard Huang (flyerhzm@gmail.com)
+author: Richard Huang
 description: Like the simplify render in views, from rails 2.3, we can also simplify render in controllers.
 tags:
 - controller
-likes:
-- flyerhzm (flyerhzm@gmail.com)
-- David Westerink (davidakachaos@gmail.com)
-- jrichardlai (jrichardlai@gmail.com)
-- ChuckJHardy (chuckjhardy@gmail.com)
-- juancolacelli (juancolacelli@gmail.com)
-- Locke23rus (locke23rus@gmail.com)
-- logankoester (logan@logankoester.com)
-- kugaevsky (nick@kugaevsky.ru)
-- bugmenot (fhugfizn@sharklasers.com)
-dislikes:
-- 
 ---
 Like simplify render in views, from rails 2.3, we can also simplify render in controllers. Here I will show you the contrast.
 

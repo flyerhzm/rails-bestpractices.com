@@ -1,23 +1,11 @@
 ---
 layout: post
 title: Replace Complex Creation with Factory Method
-author: Wen-Tien Chang (ihower@gmail.com)
+author: Wen-Tien Chang
 description: Sometimes you will build a complex model with params, current_user and other logics in controller, but it makes your controller too big, you should move them into model with a factory method
 tags:
 - controller
 - model
-likes:
-- ihower (ihower@gmail.com)
-- flyerhzm (flyerhzm@gmail.com)
-- anildigital (anildigital@gmail.com)
-- pedromtavares (pedromateustavares@gmail.com)
-- Chris Cairns ()
-- juancolacelli (juancolacelli@gmail.com)
-- rgo (contacto@rafagarcia.net)
-- fabio.pisaruk (pisaruk@gmail.com)
-- raghuk (raghu@sourcebits.com)
-dislikes:
-- 
 ---
 Bad Smell
 ---------
@@ -28,13 +16,13 @@ Bad Smell
         @invoice.address = current_user.address
         @invoice.phone = current_user.phone
         @invoice.vip = (@invoice.amount > 1000)
-    
+
         if Time.now.day > 15
           @invoice.delivery_time = Time.now + 2.month
         else
           @invoice.delivery_time = Time.now + 1.month
         end
-    
+
         @invoice.save
       end
     end
@@ -50,7 +38,7 @@ Refactor
         invoice.address = user.address
         invoice.phone = user.phone
         invoice.vip = (invoice.amount > 1000)
-    
+
         if Time.now.day > 15
           invoice.delivery_time = Time.now + 2.month
         else
@@ -58,7 +46,7 @@ Refactor
         end
       end
     end
-    
+
     class InvoicesController < ApplicationController
       def create
         @invoice = Invoice.new_by_user(params[:invoice], current_user)

@@ -1,23 +1,12 @@
 ---
 layout: post
 title: Active Record Query Interface Optimization
-author: Angelo Capilleri (capilleri@yahoo.com)
-description: Use  select  with  has_many and belongs_to on Active Record Associations 
+author: Angelo Capilleri
+description: Use  select  with  has_many and belongs_to on Active Record Associations
 tags:
 - refactor
 - model
 - performance
-likes:
-- avocade (avocade@gmail.com)
-- juancolacelli (juancolacelli@gmail.com)
-- andreyviana (andreydjason@gmail.com)
-- David Westerink (davidakachaos@gmail.com)
-- DiegoDelpiero (diegocastorina@gmail.com)
-- rusintez (ykt2002@yandex.ru)
-- marocchino (marocchino@gmail.com)
-- PsiCat (ogealter@gmail.com)
-dislikes:
-- indrekj (indrek@urgas.eu)
 ---
 Using the `select` parameter in Active Record association, you can speed up your application about 50% and more.
 The following example is only focused on the optimization of the association using select, so there are further optimizations for the following examples.
@@ -45,7 +34,7 @@ I used a Patient table with 2000 records and Physician table with 4000 records, 
 
  @physicians = Physician.includes(:patients).all
 
-Generated Sql is: 
+Generated Sql is:
 
 **Before refactoring:**
 
