@@ -3,7 +3,7 @@ set :rvm_ruby_version, '2.3.3'
 
 set :application,       'rails-bestpractices.com'
 set :scm,               :git
-set :repo_url,          'git@github.com:xinminlabs/rails-bestpractices.com.git'
+set :repo_url,          'git@github.com:flyerhzm/rails-bestpractices.com.git'
 set :use_sudo,          false
 set :keep_releases,     5
 
