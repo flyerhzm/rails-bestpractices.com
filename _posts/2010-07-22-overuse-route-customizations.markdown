@@ -2,7 +2,7 @@
 layout: post
 title: Overuse route customizations
 author: Wen-Tien Chang
-description: According to Roy Fieldingâ€™s doctoral thesis, we should use restful routes to represent the resource and its state. Use the default 9 actions without overusing route customizations.
+description: According to Roy Fieldingâ€™s doctoral thesis, we should use restful routes to represent the resource and its state. Use the default 7 actions without overusing route customizations.
 tags:
 - rails2
 - route
@@ -15,7 +15,7 @@ Bad Smell
                                        :update_comment => :put,
                                        :delete_comment => :delete }
 
-According to Roy Fieldingâ€™s doctoral thesis, we should use restful routes to represent the resource and its state. Use the default 9 actions(index, show, new, edit, create, update and destroy) without overusing route customizations. The solution to solve the overuse route customizations is to find another resources
+According to Roy Fieldingâ€™s doctoral thesis, we should use restful routes to represent the resource and its state. Use the default 7 actions(index, show, new, edit, create, update and destroy) without overusing route customizations. The solution to solve the overuse route customizations is to find another resources
 
 Refactor
 --------
