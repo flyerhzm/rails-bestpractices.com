@@ -92,8 +92,8 @@ Be attention that I add the accepts_nested_attributes_for for models who needs t
       </p>
       <%= form.fields_for :video do |video_form| %>
         <p>
-          <%= logo_form.label :video %>
-          <%= logo_form.file_field :attachment %>
+          <%= video_form.label :video %>
+          <%= video_form.file_field :attachment %>
         </p>
       <% end %>
       <%= form.fields_for :images do |image_form| %>
