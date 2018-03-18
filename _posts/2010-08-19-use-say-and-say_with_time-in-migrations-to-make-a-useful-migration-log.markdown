@@ -19,7 +19,7 @@ For example, imagine you have a migration that just update column information fo
             user.firstname, user.lastname = name.match(/^([^\s]*)\s*(.*)$/).to_a[1..-1] unless user.lastname.present?
             if user.changed?
               user.save
-              say "#{user.id} was updated"
+              say "#{user.id} was updated", subitem: true
             end
           end
         end
@@ -33,8 +33,8 @@ For example, imagine you have a migration that just update column information fo
 
     ==  UpdateUserName: migrating =================================================
     -- Spliting name to extract last name
-    -- 859302 was updated
-    -- 859303 was updated
+       -- 859302 was updated
+       -- 859303 was updated
        -> 0.0786s
     ==  UpdateUserName: migrated (0.0787s) ========================================
 
