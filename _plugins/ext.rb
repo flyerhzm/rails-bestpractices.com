@@ -1,2 +1,2 @@
-require "jekyll/speakerdeck"
 require 'jekyll/tagging'
+require 'jekyll-paginate'

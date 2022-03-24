@@ -1,9 +1,10 @@
 source "https://rubygems.org"
 
-gem "jekyll"
+gem "jekyll", "~> 3.9"
 gem "jekyll_ext"
 gem "liquid"
 gem "rdiscount"
 gem "nokogiri"
-gem "jekyll-speakerdeck", github: "flyerhzm/jekyll-speakerdeck"
+gem "jekyll-paginate"
 gem "jekyll-tagging"
+gem "webrick"
