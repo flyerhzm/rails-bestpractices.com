@@ -1,4 +1,4 @@
-FROM ruby:3.1-alpine AS jekyll-builder
+FROM ruby:3.4.1-alpine AS jekyll-builder
 RUN apk update && apk add build-base
 WORKDIR /app
 COPY Gemfile* /app/
