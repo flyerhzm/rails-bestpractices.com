@@ -19,7 +19,9 @@ servers:
 # Note: If using Cloudflare, set encryption mode in SSL/TLS setting to "Full" to enable CF-to-app encryption.
 proxy:
   ssl: true
-  host: rails-bestpractices.com
+  hosts:
+    - rails-bestpractices.com
+    - www.rails-bestpractices.com
   # Proxy connects to your container on port 80 by default.
   # app_port: 3000
   healthcheck:
